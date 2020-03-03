@@ -1,0 +1,378 @@
+,Id,Topic,Details,Item Type,Priority,LifeCycle,BSI Ticket #,Medinix Ticket#,ITUSS /SN Ticket,Labels
+0,1,Custom interface alerts,"We remember from the Admin training that we got the statement from BSI that it would be possible to create custom alert notifications for interfaces in CTMS. When we look into CTMS, we see no option to do so. 
+We looked into the creation of custom alerts for type ""General"" but there is no option to customize based on alerts.",Topic,Medium,,234559,,,
+1,2,Custom interface alerts,"Further more, custom alerts can only be sent to pre-defined groups, not to dedicated people. Since our support team has the Config Admin role, I think we should not send those custom alerts to everyone with this role.",Topic,Medium,,,,,
+2,3,UAM Interface Errors,CTMS is generally showing interface UAM Errors when a potential role is granted in UAM but the user is not yet granted in CTMS. This does not make sense and should not show up as an error. Can this be adapted?,Story,Medium,,,,,
+3,4,BizTalk Errors because of user not found,"There are a lot of BizTalk Errors in CTMS because of the user does not exist (see 2). This error showing up does also not make sense and the handling should be adapted in BizTalk. It causes a lot of Error entries in the log, making it difficult to sort out ""real"" errors.",Story,Low,,,,,
+4,5,CTMS Patch 1.0.13,"Impact Assessment to be completed, 234283 has no mapped failed test case or defect",Story,Medium,,"233892 [CR]
+234244 [CR
+233968 [CR]
+234041 [BUG]
+233653 [BUG]
+234105 [BUG]
+234283 [BUG]
+234673 [BUG]
+234050 [BUG]",,,
+5,6,eMail alert setttings cannot be modified,eMail alert setttings cannot be modified. This requires a CTMS System Change.,Story,Medium,,,,,
+6,7,Problem with Subject Data Role-Up,"For three studies, fields cannot be modified. Ticket to be created to BSI",Bug,Medium,,234577,,IM15328906 ,
+7,8,eMail notification setting disabled,eMail notification is currently not used in the system. Medinix should test on TST environment. Configurable there.,Story,High,3,,"MX#1015435
+MX#1016092",SD06312427,
+8,9,Recruitement Status,"For the Recruitement Status, the field is greyed out. Investigate why. Dynamic Field to be updated.",Story,Medium,,,"MX#1015176
+MX#1015435
+LC 3.1",SD06309362,
+10,11,Change Control in Reference Trials,How to keep track of change control in reference trials? Process has to be agreed.,Topic,Medium,,,,,
+11,12,Display Issue for custom report,A custom report cannot be created to view all sites for a single trial with the right address / city / country in the right sort order. Study information by study by site is required. ,Topic,Medium,,234576,,C02709262,
+12,13,eTMF Interface Activiation for migrated studies,"End user is receiving an error ""eTMF Activation; It's not allowed to activate eTMF for this site because it is attached to a trial which has been created during the data migration process or through an interface. Please contact support for further assistance.""
+An administrator could enable the eTMF activation.",Topic,High,,,,IM15328361 ,
+13,14,Support Portal notifications,"When creating tickets in the BSI support portal, we did not receive any mail notification. Can this be setup and will we get notified for any updates in the tickets?",Topic,Low,,,,,
+14,15,"Problem with Evaluation Plan ""Version"" Field","Evaluation Plan ""Version"" Field does not show the most recent version according to ""Version History"" table. Screenshot shows only 1 example, but the issue exists for several Evaluation Plans.",Bug,Medium,,234578,,IM15328995,
+15,16,Display Error in User Accounts for new users,"If an administrator opens the User Accounts tab and clicks on a new user, the User Options for time zone is showing up but cannot be closed, button is not working.",Bug,Medium,,234642,,IM15362297 ,
+16,17,"Display of ""Show only personal items""",Some users (CRO-CRA and co-CRO-CRA roles) have this grayed-out and others are not. I checked the assignments and they are identical. Is there another reason?,Bug,Medium,,,,,
+17,18,Performance concern,Performance issue detected for users in Indy and Mannheim. Some actions are taking longer than >5 minutes to load in both locations (searching trials and searching monitoring visits),Bug,Medium,,234620,,SD06277617,
+18,19,Status of User Manual bug fix,"Some users are able to launch the user manual at all times, and others who cannot when they are working within a wizard (e.g. A user was creating a trial and had questions on how to decide the subject information. They were unable to open the manual from that screen. Nothing happens when they click it.) This was documented by Sigrid that it was a bug to be fixed. Is there a status on this?",Bug,High,,234050,,,
+19,20,Configuration of Excel Documents in CTMS,Maria told me today that the configuration of Excel Documents in CTMS must be repeated after every new deployment.  This impacts 7 Business (CPS Specific) documents.  Is there any way to include a change request for this configuration to be done automatically with each new deployment?,Topic,Low,,,,,
+20,21,Study Deletion: Configuration Admin is not receiving any review alert of study deletions,"The CTMS Study Unique IDs, Site codes and the Investigator information is also applied for the downstream systems like Veeva Vault eTMF, Medrio EDC and RURO Limfinity systems ",Topic,Low,,,,,CMT
+21,22,ITUSS Tickets: There are 2 ways?,Super Users were trained to use the ticket that was agreed in the Support Workshop. There is now an incident ticket option that has not been communicated. Who do the tickets get mapped to and how do we resolve this?,Topic,Low,,,,,
+22,23,Update of Site/PI information in CTMS,Users are unable to update the detail information for a site or PI in CTMS. Options are grayed out. Does anyone have ideas as to why?,Bug,Medium,,234827,,IM15356198,
+23,24,IIS/AIS Coordinator role restricts users to see only what has been assigned. They want to see all trials within their team.,A user notified me today that his team user SR in a way that let them all see each others trials within the IIS/AIS team. How can we do this with the way our system is currently setup?,Story,High,,,MX#1015767,SD06309362,
+24,25,Mary McClain needs to be deleted from the system,"A Super User thought he was in TRN and created a mock person. After discussions yesterday about deleting, I didn't want to do it on my own without confirming the alert to the Config Admins would be removed as well.",Topic,Medium,,,,,
+25,26,Need a way to save partial data,"An IIS user spent 1.5 hours working on the creation of a trial and due to processing error (IT Ticket submitted by me), lost all the work becuase she couldn't complete the manditory fields. Is there any way to improve the system to allow the save of partial data?",Story,Medium,,234673,,IM15338297,
+26,27,"Add ""Create"" link within Employer when creating a new person.","Change Control in Reference Trials - How to keep track of change control in reference trials? Process has to be agreed.
+
+@Anita/Roland/Dave - please prepare any outstanding questions you may have on this topic.",Story,Low,,,,,
+27,28,Cannot select dates by clicking on it,Cannot select dates by clicking on it,Topic,High,,234894,,IM15361743,
+28,29,Urgent eTMF problem (NOT CTMS - eTMF interface problem) for trials migrated to CTMS,"Whereas the CTMS-eTMF interface does not work for migrated studies we now also have reported cases where the users could not modify the folder structur WITHIN eTMF anymore (e.g. create a site binder) for their studies that were migrated to CTMS. When they open an eTMF ticket via IT USS, it get's closed with the instruction to set up the folders via CTMS - which is not possible due to missing functionality of CTMS - eTMF interface for migrated trials.",Topic,High,,,,,
+31,32,Organization creation for users with no organization in CTMS,Michal created a new organization in PROD in order to finish the user access for new admin in Poland. Michael mentioned that this is not the appropriate process. ,Topic,Medium,,,,,
+32,33,on behalf of' function in visit associated letters,Maria has corrected the 'on behalf of' function to an IF_EQUAL function in TST for confirmation letter and it worked. We need all letter templates to include this change,Story,Medium,,Ticket #234450,,,
+33,34,Users modifying Trial owners and Sponsors,"Users are modifying trial owners and sponsors, which should not be done (legal info provided by Daniel Rehn is used for Public Posting). Is there a technical way to prevent this but still let people create and edit other types of organisations?",Story,Medium,,,,,
+34,35,Person who is already assigned to another organization,"If there is an entry in CTMS for a person that associates it with another organization than the new request, how is the person to be approved? With the suffix [2] as in Study Registry?",Topic,Medium,,,MX#1015179 ,,
+35,36,Reject Approval,"Can an approval task be rejected, e.g. Creator has reversed first and last name and created the same person with correctly name",Topic,Medium,,,,,
+36,37,Approval for additional role,"If there is already an entry in CTMS for a person with the role of a PI and now there is an application for the same person for the role of a Study Coordinator (SC), what are you doing? Merge? If yes, how does it work? (E.g. Nyarko, what happens during the approval?)",Topic,Medium,,,MX#1015182,,
+38,39,Organization short name,"Organizations: Where is the short name used? When update requests come in which the short name is changed, what needs to be considered, when can the requests be approved?",Topic,High,,,MX#1015184,,
+39,40,Person assignment without approval,"Why can an investigator be assigned to a study, even though it has not yet been approved",Topic,Medium,,,MX#1015185,,
+40,41,IIS test role in TST/VAL,"In order to test BSI patches, the IIS role would need to be reflected in the TST / VAL environments.",Topic,Medium,,,,,
+41,42,Generic Accounts to Test approval process,Generic Accounts would need to be required to test approval workflows,Topic,Low,,,MX#1015186,,
+42,43,"Remove ""questionnaire final"" steps in TRN",Users are creating trials in TRN in order to learn the monitoring visit report process. They are running into the issue where the questionnaire has not be set to final so they are unable to proceed. Is there a way to remove this step in TRN? Or any other suggestions?,Topic,Low,,,,,
+43,44,Organization updates between RPD and RTD,"For some reasons Users keep updating this Organisation from RPD to RTD and back. further multiple trials have RPD as sponsor. we have to prevent that users keep updating this, because this is part of Study registry. Are these updates being checked by Medinix?",Bug,Low,,,,,
+44,45,"Only the Clinical Trial Support and Contract Manager roles to be allowed to mark objects as ""reportable""","only the Clinical Trial Support and Contract Manager roles to be allowed to mark objects as ""reportable"" (eg PI, organization).",Story,Low,8,230059,"MX#1015464,
+MX#1016498",,
+45,46,Organization subtypes and definition of duplicate organizations,,Topic,Medium,,,,,
+46,47,Site visit after migration - how to handle alerts,"A user forgot to create a monitoring visit in Masterfile before the freeze. In order to capture the metric, she added the visit after go-live, but now she has alerts to finalize the report. The report has already been finalized on previous template and stored in eTMF.",Topic,Low,,,,,
+47,48,Error: Code mapping configuration error,"Querying the Data Provider interface causes the following error:
+
+GET /rocheserver/api/dataprovider/trials?expand=true HTTP/1.1
+Host: roche-dia-tst.bsi-ctms.com
+Cache-Control: no-cache",Bug,Medium,,234889,,,
+50,51,"Dashboard alert: ""The EP version tracking is missing for Qx 20xx"" for completed projects",How to turn it off for quarters where the project is already completed?,Topic,Medium,,235045,,IM15374267,
+51,52,Users who want their names changed in CTMS,4 CTMS users prefer a different name_How do we make this kind of change? Directly in CTMS? Through UAM? Through ENROLL? ,Topic,High,,,,,
+52,53,Partial save for questionnaire review,"If you click ""save and close"" when you are half-way through the review process of a questionnaire, it automatically ""approves"" all remaining questions. Is this correct?",Topic,High,,235118,,IM15380282,
+53,54,"Alerts ""eTMF - Study Site Binder Template configuration is missing"" for RD003901 Sites USIND050 and USSEA013 are showing up on my B-Adm dashboard.",Why is it showing up on my dashboard and what is the problem? Does anyone else from this team have these alerts?,Topic,Low,,,,,
+54,55,Logistics,Is there a way to import an inventory list separate from the inventory types list? The user would like to add what is available within the Indy logistics warehouse using the inventory types that are already uploaded. Any ideas?,Topic,Medium,,,,,
+56,57,"""Adverse Event (Test Template)"" containing only the Header is currently in the live system","Test template Should be removed, but new template should be configured for RMS use",Bug,High,3,,"MX#1015435
+MX#1016092",,
+59,60,How to edit migrated visits,CRA cannot edit visit migrated from masterfile,Bug,High,,235241,,IM15396830,
+60,61,Incident creation via ITUSS to IT,IT recieved incident with Primary Key mentioned but PK was from VAL not PRD and there was no mention of CTMS instance. Also it would be great to have more details in the incidents preferebly with screenshots of the issue.,Topic,Low,,,,,
+62,63,Display issue for custom view in CTMS,"Site Name, Address, City, Post Code and Country does not line up properly when each address element are displayed in individual columns in a custom view",Bug,Low,,,,,
+64,65,Alerts in BAdmin dashboard re: interface,Interface Veeva - Immediately,Bug,Low,,235416,,IM15392906,
+65,66,Approver role not visible in Monitoring Visit Report,"In General Monitoring Visit report, when downloaded as draft, in the list for Report Sign-Off there is only name of the approver without his role. For other people like Author and Reviewer their name as well as role is visible. Role of the approver is visible in the system in the visit. Mistake in report template or possible bug? Reported by Kelly Morgan via ITUSS Request",Bug,Medium,,235366,,C02734138,
+66,67,CTMS ITUSS Ticket template for placing configuration changes,"We need to discuss whether we use the current ITUSS ticket template 'DIA CTMS: REQUEST FOR SUPPORT - CONFIGURATION' also for requesting configuration changes or we create a new template.
+Since both 'CTMS Business Support Network Process' and SOP say:
+--> Super User initiates support incl. configuration change request to CTMS Support Team via IT USS, I suggest that we use one template for both purposes. Configuration Admins of both BAs+Medinix already have access to the group GLOB-SAG-CIM STUDY DATA EXPERT-AMS.",Topic,Medium,,,,,
+67,68,Update userId on CTMS side,Update userId on CTMS side for 3 accounts that has been created manually in order to make it possible to change possible role via UAM ,Topic,Medium,,235500,,,
+70,71,Removing a user,User no longer works at Roche. I went in UAM and revoked CTMS roles. Do I need to do anything further?,Topic,Medium,,,,,
+71,72,"Affiliate user needs to be assigned, but no organization","I went in to add a new Roche organization, but cannot find the post code. Please advise now to move forward:
+Roche Diagnostics (Pty) Ltd
+90 Bekker Road
+Building E
+Hertford Office Park
+Vorna Valley
+Midrand
+1686
+South Africa",Topic,Medium,,,,IM15426405,
+72,73,Show certain milestones,,Topic,Low,,,,,
+73,74,Roche legacy DE,"People start updating facilities that have a blank / dummy address (city = ""Roche legacy DE""). Why were organizations migrated like this?",Topic,Medium,,,,,
+74,75,Roles allowed to be approved,"Sometimes, it is requested to grant multiple roles to a person, e.g. study sponsor and site member. Is that OK? What are the combinations not allowed?",Topic,Low,,,,,
+75,76,Responsible person changed to BSI Admin,"After adding approver as the same person as responsible, system automatically changed responsible person to BSI Admin.
+",Topic,Medium,,235501,,IM15406665,
+76,77,Central Monitoring list updated in the first go-live week: General Administration → Dynamic Fields → Monitor Visit → Performed Tasks--> overwritten by patch 1.0.1???,,Topic,Medium,,,,,
+78,79,Not able to copy detail error message in interface logs,When trying to copy details of the error message in Inteface log only PK can be copied. Sometimes it's necessery to copy the detailed error message in order to send it to other support teams.,Topic,Low,,,,,
+79,80,TRN not accessible at the moment,,Bug,High,,235635,,,
+80,81,2 tickets submitted by end users rather than super users,I have been contacted twice to help answer tickets that were submitted by an end user rather than Super User. I thought these were declined and the user was told to address the question to the super user. Thoughts?,Topic,Medium,,,,,
+81,82,Unspecified but Editable Status under Documents for Trials,"Under Trails (RD003186) -> Documents -> Study Protocol -> Status and Dates -> Status
+The Status field is not mandatory but editable. There are no suggested options. But it is not free text either because when ""complete"" is typed in, a popup message says ""No suggestions for 'complete'"". It is ok to leave it open. But confusion might be caused to end users. This is for document type Linked Document External. SU Emma Tao via ITUSS",Bug,Low,,235701,,IM15431713,
+82,83,External Link used under Trail Documents for DiaDoc documents,"Under Trail and Document, we are given the option to link external documents and provide a URL. For the DiaDoc documents, eg. Study Protocol, Study Plan etc., we copy the URL for the open document and paste in CTMS. However, this URL has an expiration. The link does not work after certain period of time. What is the proper way to link DiaDoc documents in CTMS? SU Emma Tao via ITUSS",Topic,Medium,,,,IM15432389,
+83,84,Removal of potential role in CTMS,What is the correct procedure? Directly in CTMS or via UAM?,Topic,Medium,,,,,
+84,85,CTMS eTMF interface error,Error while uploading Site Qualification Visit report ot eTMF fro Binder Template: Study Site Level File (RMD)_Master List Template. Clasification in CTMS for document template is Site Qualification Report however there is a missing placeholder in eTMF,Bug,High,3,,"MX#1015435
+MX#1016092",IM15434161,
+85,86,Alert for missing AE information in 2017 appearing in dashboard despite NA entry,"Affected user Cristina Pratt-Knoll
+
+Determine if ""Not Applicable"" is checked, should it affect the alert behavior or not. The higher level question is - should it be mandatory to track Adverse events? If yes, is it okay to remove the ""not Applicable"" option altogether.",Bug,Medium,,235714,,IM15437029,
+86,87,Inventory Management and Contract Module Issues,"Recently, our team discovered an issue related to uploading new inventory lists into CTMS. Our team, including our business admins, were all informed that CTMS would remove all of the old items in CTMS and only utilize the items on the new uploaded list. However, when this was tested in CTMS, we found that all the old items were instead made ""inactive"" but remained as duplicates within the system. Therefore, the user could still search to find these items, which allows for the possibility of creating orders of inactivated items, as well as creating inventories consisting of items that are marked as ""inactive"" in the system.
+SU Felix Austin via ITUSS
+
+Adjust Granting Matrix to exclude possibility for Contract Manager role to update inventory item TYPES, which is an admin-level task (they will still be able to process inventory items)
+Discuss the role assignments for Logistics Manager with respect to handling inventory item TYPES, which is and admin-level task (currently 12 people)",Bug,Low,10,235722,MX#1016712,,
+87,88,CTMS Template mistake for Site Initiation Visit Report ,"Error in Site Initiation Visit Report - Concat Date(s) have listed CI_evtStartDDMonYYYY twice, instead of listing the End Date.",Bug,High,5,,MX#1015991,"SD06305505
+C02739312",
+88,89,Organization zip code - how to update,Unclear how zip codes can be updated,Topic,High,,,,,
+89,90,Organization zip code - non-numeric zip codes not displayed,"Japanese zip codes contain alphanumeric characters, e.g. ""Graduate School of Medicine and Faculty of Medicine Kyoto University"" has a zip code of 606-8501, however, it is not displayed in organization form, although value has been accepted. Is this a bug?",Topic,Low,,236107,MX#1015603,,
+91,92,Configure 6 CPS document templates that were submitted late.,"See documents here:
+https://drive.google.com/open?id=1Rcph7uKH2bh-dVA2HUOl7E0IEKXkKFdn",Topic,High,3,,"MX#1015435
+MX#1016092","SD06312427
+C02746779",
+92,93,2 documents had errors and updated version should be configured: Hold Form and DOA,"See documents here:
+https://drive.google.com/open?id=1Rcph7uKH2bh-dVA2HUOl7E0IEKXkKFdn",Story,Medium,3,,"MX#1015435
+MX#1016092",SD06309362,
+93,94,IIS/AIS Coordinator role restricts users to see only what has been assigned. They want to see all trials within their team.,"A user notified me today that his team user SR in a way that let them all see each others trials within the IIS/AIS team. How can we do this with the way our system is currently setup?
+BSI suggested a new role which can be assigned by the responsible person. It is possible to configure this role to be assigned as many times as needed.",Story,Low,,,MX#1015767,SD06309362,
+95,96,"Number of assigned ""Study Manager"" role should be limited to 1 ","- clean-up of studies having two SMs in accordance with study team
+- update configuration",Story,Low,8,,"MX#1015187
+MX#1016498",,
+100,101,Inventory Items,Discussion of ticket IM15438104,Bug,Medium,,235722,,IM15438104,
+101,102,Duplicate sites?,Site ID: CNGGZ001,Topic,Medium,,,,,
+102,103,Substituion Matrix issue,"User with roles CRO-CRA, Co-CRO-CRA and Clinical Trail Support cannot select subtitute who is only CRO-CRA and Co-CRO-CRA.
+Bug or intended behaviour.
+According to Substitution Matrix Clicnical Trial Support can only be substituted by Clinical Trail Support
+A configuration admin I'm able to make such substitution.",Bug,Medium,,235920,,C02750217,BPT
+104,105,Inventory Items,Can you place an order based on inactivated inventory items?,Topic,High,,235722,,IM15438104 ,
+105,106,"CTMS Document upload to eTMF issue
+","When CRAs perform site qualification visits, using CTMS with CTMS-eTMF connection enabled, CTMS-eTMF interface searches for a placeholder in eTMF RMD master template. However, historically we have filed these site qualification visit reports under study binder because of one reason - if a site does not qualify to be used, we do not want to create an eTMF site binder as we pay for license by each site. 
+How can we go around this issue? Can we make CTMS file a site level document at study level in eTMF?",Topic,Medium,,,,,
+106,107,TST Data Cleanup,"For a PoC & setting up replication into CIW, all production data needs to be removed from the Test environment. How to accomplish this best?",Topic,Medium,,,,,
+107,108,Good Documentation Practice,"How do we handle and document data change requests and which information goes into the ""Reason for change""",Topic,Medium,,,,,
+108,109,Approval by SM with Co-CRA role,"This is about Study Managers who also have the Co-CRA role.  There are times when the SM 
+will go to conduct a monitoring visit at the site as the Co-CRA and complete the questionnaire 
+however in the system the Author cannot be the same as the Approver.  
+User  tried to add the Study Manager role as the Approver but the person who is listed as the 
+Co-CRA does not appear in the list of the SM.",Topic,Medium,,,,,
+109,110,EP Version History Data Deletion,"The EP Version history that was migrated from Masterfile has been deleted for 2 EP's by 2 different users when they selected ""Not Applicable"" in CTMS. 1. Can you please undo the deletion and restore the version history? (PK:1000338810 and 1000348376) 2. Can you please remove the ""Not Applicable"" button or make sure that when it is ticked that the data is not deleted. 3. Can you please check, why John Burden who is a Study Manager and not a Functional Rep can update an EP (such as selecting himself as the responsible person and changing the version history)?",Bug,Medium,,236335,MX#1016498,IM15491644 (INC0109308),
+110,111,End Users creating request,End User created request (which should be incident) instead of SU. As he told he did it because SU told him to do it.,Topic,Medium,,,,,
+111,112,Request for Information on Substitution,,Topic,Medium,,,,,
+112,113,Unclear origin of data,"Data clean-up regarding sample, subject and visit data for the two affected sites. How to resolve ERROR P19? And is there a way to multi-select visits for deletion?",Topic,Medium,,236100,,IM15462695,
+115,116,Alerts in Personal dashboard,"Author's signature needed
+Related to MV (113)",Topic,Medium,,236014,,IM15462695,
+116,117,User interface question within questionnaire,"When a user toggles through the questionnaire questions with the keyboard, it doesn't update the question accordingly. Users were wondering if this could be taken for consideration in future improvements",Topic,Medium,,,,,
+118,119,Any input regarding the ticket covering the configuration issue with a question in SQV 05.04 (IM15498354),User submitted ticket on 31OCT but hasn't rec'd a response. Has this topic been discussed in Hypercare?,Topic,High,8,,MX#1016498,IM15498354,
+119,120,Baseline dates for Milestones,Do we have logic built to support this? Can we autodefault to not include these columns? ,Topic,High,,,,,
+120,121,"how to resolve alerts for user Hawk, Breanne due to visits after migration","RD003141, site USCHS005_User had to add 2 visits after CTMS launched for dates prior to CTMS launch. Questionnaires will not be done in CTMS",Topic,Medium,,,,,
+122,123,Granting - Global Management Role,"Global Management Role is not able to see Firewall studies or Evaluation Plans (URGENT): Granting Matrix seems to be set up correctly, but maybe interferring with the role granting matrix?",Bug,High,8,,MX#1016498,,Operations
+123,124,Public Posting Manager should have Global Read All in PROD,Urgently required otherwise PPM will not get informed about new studies,Bug,Medium,4,,MX#1015839,"SD06343067
+C02778949",
+124,125,Granting - Global Management Role can't see EPs,Global Management Role is not able to see Evaluation Plans (URGENT),Bug,Medium,,,,,
+125,126,Option 1 - Inventory ,BSI to help CPS implement Inventory solution (option 1). Do we have timelines to this?,Topic,High,,,,db script part INC0061108,
+126,127,Questionnaire review process question,"If the Reviewer selects ""Report requires revision"" and the user can modify all questions. If the Approver selects ""Report requires revision"", it approves all questions. Is this a bug or normal?",Topic,Medium,,,,,
+128,129,Quarterly tracking update alert for TRIAL in status complete/analysis/post-analysis (affected user is Ann S.),"@IT, was this ticket closed or are you still working on this?",Bug,Medium,,235818,MX#1016498,IM15431630,
+129,130,eTMF interface,"Deletion and re-creation of RD003541. This is a study which has not started yet and has almost no information apart from trial dialogue and a few milestone planned dates (no sites, no persons, no visits, etc.) The study manager would like to use the eTMF interface for this study, which is currently not possible for migrated trials. So he has asked if it would it be an option to delete and re-create the study in CTMS? ",Topic,Medium,,,,,
+131,132,"Merging of Organizations - ""in use"" message","Trying to merge two specific organization, a message is displayed
+""ORS_SITE"".""COMPANY_NR"".Value '1000362586' is already used.
+
+The organization to merge are:
+Master:    1000362586
+Follower: 1008850581",Topic,Medium,,,MX#1015865,,
+132,133,Alerts in system,Proposal: communication of release functionality via alert in system. Thoughts?,Topic,Low,,,,,
+133,134,Ppt report configuration is strange,"Number of subject planned: #  The number of subjects planned enrolled.
+Number of samples planned:  The number of samples planned collected",Topic,High,,,,,
+134,135,Multiple tickets for the same issue,We have multiple tickets (error P19) for the same issue which will be resolved in newest release. Need agreement how to deal with such tickets.,Topic,High,,,,,
+135,136,Wrong name and email for investigator,"User has been added during migration. According to SU John Burden. Information about user should be as follows: Surname should be: Ordonez-Llanos
+Email should be JOrdonez@santpau.cat
+
+Address should be:
+
+Hospital de Sant Pau
+Professor Clinical Biochemistry, Universitat Autònoma
+Sant Quintí 89
+Bloc B-2
+08041 Barcelona, Spain
+Phone : +34 636 48 74 44 ",Topic,Low,,,MX#1015976,C02792258,
+136,137,Responsible Role has changed to BSI Admin,"No workflow changes possible anymore. Old value Weinberger, Jan-Philipp. New value: BSI Admin. Submitted by SU Ekaterina Bauer",Topic,High,,,,C02792299,
+137,138,CTMS Search for Trials,"When an RTD users first logs into CTMS to search for Trials the default checkbox is RMD and not RTD.
+",Story,High,,,, SD06374830 (C02807373),
+138,139,CTMS Reports,"- The report freezes every time I try to pull a large set of data.
+- The results of more than one parameter are clubbed under one column. For example: if you add the site name, address, responsible person., they all appear in one cell under one column.
+-  Certain parameters don't appear as an option even though the data is available in the system. examples: 
+First case tested (site level) 
+Last case tested (site level) 
+Protocol approved (study level) 
+Study start notification (site level) 
+Study report approved (CSR) (study level)   ",Story,High,,,,,
+139,140,CTMS Reports,Adding columns creates error C18,Bug,Low,,"237244
+237736 ",,IM15575825,
+140,141,Approval process for visit reports,Request from CPS Super Users to have the review go to both Reviewer and Approver before coming back to the Author. Not sure how people feel about this or if the system would even allow it?,Topic,Medium,,,,,
+141,142,User completed training before UAM role assigned.,"Will his name still show on the training completion list so you can give him access? habashym (user name), AIS/IIS Coordinator role
+
+GengQin is aware of this topic and should follow-up with user if there are any issues. Please confirm access by EOB 21NOV",Topic,Medium,,,,,
+142,143,Approver changed status to final before reviewer ticked off review box,,Topic,Medium,,237808,,IM15619858,
+143,144,Person Updates,Unclear how to configure disallowing updates of persons,Topic,High,,,,,
+145,146,Person's address,It is possible to store a person's address vs. the address of the employer. Use Case?,Topic,High,,,,,
+146,147,Escalation path,Who feels responsible for issues arising from person/organization review?,Topic,High,,,,,
+148,149,Alert E-Mail Notification Enabled,"is set to yes in VAL, however, no effect in user options, i.e. alert options are greyed out",Topic,Medium,,,,,
+149,150,Strange Trial Setup,RD002557,Topic,High,,,,,
+150,151,3rd Review Round,,Topic,Medium,,,,,
+151,152,Shipment Log Form - Fields?,Unclear where to find fields related to shipment information for usage in document template,Topic,Medium,,,,,
+152,153,Sponsor is not in the drop-down menu,"Please add Genentech as possible Sponsor to choose from. 
+
+for example fro the Study RD002557 needed, but should be possible to choose for all studies.
+Requested by SU LENKE",Topic,Medium,,,,C02798295,
+153,154,How to change incorrect assignment of Trial to DVP,,Topic,Medium,,,,,
+154,155,Granting Matrix question,"Can an evaluation plan creator also delete an EP (and consequently all the trials, sites, visits etc beneath the EP) based on the current granting matrix? Global Management can still not see EPs.",Topic,Medium,8,,MX#1016498,,
+156,157,Adding new country,[Sudan] missing in the system,Topic,High,,,,SD06374862 ,
+157,158,Changing short name for Organization,"Request from SU DRIGGEJ1:The site name has been entered as NEOGEN, but the correct name is NeoGenomics.  Can this be corrected?  ",Topic,Medium,,,MX#1016144,C02804362,
+158,159,SQV Question 5.04,"Was misconfigured -> What is the status now?
+Seems to be missing from the report document now.",Topic,High,6,,MX#1016147,IM15498354,
+159,160,"Make ""Employment Type"" visible as column and in advanced search",Can this be done by config Admin or does this need to be done by BSI?,Topic,Medium,,237798,,IM15620051 (REQ0037094),
+160,161,E-mail notification not effective,"Do not get E-mail, e.g. of substitutes, or summary",Topic,Medium,3,238031,"MX#1015435
+MX#1016092",,
+161,162,Secondary Id in doc templates,"n/a, if empty?",Topic,Medium,,,,,
+162,163,Email address not valid,"Error for Email address ​​​""calonsot@fundacio-puigvert.es"":
+""E-Mail: Invalid E-Mail Address""",Topic,Medium,,,,,
+163,164,"What will happen if I click on ""Clean Granting Matrix"" ? Will it clean all granting check marks? :-)",,Topic,Medium,,,,,
+164,165,EP version included in details but missing in dashboard,"User has details updated under EP (DVP_ACCU CHEK Inform 3_ACI3), but the dashboard is not updating accordingly. I tested in TRN and it worked. Maybe a bug?",Topic,Medium,,,,,
+165,166,SU follwed directed from IM15550685 (236951) but issue still not resolved,"RD003476 - Actual #s could not be added on trial level. Ticket said the user must delete all entries on trial and site level in order to change the setup, so the user did this, but still unable to make changes or select ""samples tested"". ",Topic,Medium,,236951,,IM15550685 ,
+166,167,Trial updates not showing in ppt overview,"RD001546, RD001547_When SMa moved the location of the content to the top of the details list, it stayed at the bottom in the report. Is this how it is configured?",Topic,Medium,,,,,
+168,169,"RD003483, Site USTNL001",Strange outcome in Samples table of COV report. BSI investigated during call and confirmed that the configuration is likely incorrect for trials/sites that includes collected data but not tested data. ,Bug,Medium,8,,MX#1016498,,
+169,170,Remaining action items from the Support Workshop need to be completed ASAP. ,https://docs.google.com/spreadsheets/d/1OdAxk_NaEmOJMx2Yja2yWAhIpsLggu4KFig0f6x8PKE/edit?usp=sharing,Topic,Medium,,,,,
+171,172,#233892 Update of Study Matrix per Oct 1.,"Study matrix will not be effective by 01OCT; therefore we will wait until further notice for this action
+
+When is the new date effective?",Topic,High,,,,,
+172,173,Central Monitoring list must be updated according to business requirements,"See spreadsheet here: https://drive.google.com/open?id=1LLs2t-v7cyyIAo7OxjuI-FOl0i_FJIAR
+
+It has now been confirmed by Business that this list should be updated as soon as possible. We will move forward with the appropriate process_27SEP2018",Topic,High,10,,MX#1016712,,
+174,175,New configuration changes to Inventory environment from CPS,"-Add dynamic fields to allow for multiple tracking numbers
+-Kits will have multiple items. How can we show this in an inventory budget? A: You can define attributes for further tracking details, but this needs to be determined how it will be used by Business. Only Admins can do this.  ",Story,High,9,,MX#1016498,,
+175,176,Secondary ID in header will be blank when “NA” is selected in CTMS. Is this a problem with Quality bc there shouldn’t be any blank fields on documents?,"Check with Sigrid if this is an easy fix
+Will be handled in first Patch release",Topic,High,,,,,
+176,177,Quality question regarding ticket 234244 Modify Trial Configuration options for Monitor Visit Questionnaire that is covered in the first patch release,,Topic,High,,,,,
+177,178,Adoption Metrics,"
+https://docs.google.com/document/d/1FNOf2cb4MTu6rzxothWzljCUmwmzQZVmED71Am2p6xw/edit?usp=sharing",Topic,High,,,,,
+178,179,Assignment matrix to be reviewed,"CRAs are able to create an operator for their site, but unable to assign. The Assignment Matrix needs to be reviewed as a whole and updated if applicable.",Topic,High,8,,MX#1016498,,
+179,180,Assignment and Granting Matrix,"""Co"" roles should have the same assignments as the primary roles. This needs to be updated asap.
+
+Also, users should not be able to update roles of persons in the system (e.g. role PI selected, but they later need to be a Sub-I. CRAs are unable to update this)",Topic,High,8,,MX#1016498,,
+180,181,eTMF ITUSS templates deactivated,Users are unable to create eTMF binders for migrated trials using the old process because it was deactivated.,Topic,High,,,,,
+181,182,"Evaluation Plan, Dropdown List for EP version as in Masterfile.",Evaluation Plans need to be updated every quarter - as was the process in masterfile. The version information needs to be entered during this process. In Masterfile there was a dropdown list in CTMS it is currently a free text field. Having the dropdown list as in Masterfile has been requested by multiple users and would assure the same format of the information.,Topic,High,,,MX#1016498,,CMT
+182,183,CRA needs more authority in system,"Proposal: CRA can add a site, add CRA LM to trial/site",Topic,Low,,,,,
+183,184,Activation Letter,Currently the Activation Date is configured to pull from the planned milestone rather than the actual milestone. This needs to be changed.,Topic,Medium,8,,MX#1016498,,
+184,185,Department code mapping needed for new affiliate user,Need more help...,Topic,High,,,,,
+186,187,Review LCT Dropdown list in trial dialogue,"List is confusing for the end user. Review the list, remove duplicates and /or mark BA specific LCT's by re-naming to RMS xy or CPS xy. This impacts Management reporting per LCT.",Topic,Medium,,,,,
+187,188,"Disable the ""Not Applicable"" button for the EP version history","The evaluation plan version history that was migrated from Masterfile has been deleted for 2 EP's by 2 different users (1 Func Rep, 1 SMa) when they selected ""Not Applicable"" in CTMS. This is affecting the KPI reporting and the display of the current evaluation plan version in CTMS.",Topic,High,,"242128
+248325",MX#1016498,IM15491644 (INC0109308),
+188,189,Do not allow users to modify (certain types of) organizations,"Example 1: The Organization ""RRR"" was used for migration purposes only. It was linked to over 1550 objects in CTMS, where no information was available for migration. Instead of choosing a different organization in the system, the users opened the organization ""RRR"" and updated the details such as the name from RRR to RPD to CPS and back to RPD. Each time this name was reflected in all 1550 objects referring to this organization. Example 2: The same happened with the information for Roche Diagnostics Affiliate in Japan, where not only the name but also the TYPE of organization was changed!!!
+Effect / Risk: The trial owner and trial sponsor could change at any time without the study manager noticing and it is affecting the retrieval of trials (standard filters set to the users business area), reporting (often done by business area), public posting and employer information of internal and external ressources in the system!",Topic,High,3,,"MX#1015435
+MX#1016092",,
+189,190,Site Qualification Questionnaire question configuration,"05.04 question has strange configuration. Needs to be changed. See details from ticket below: 
+ In the Site Qualification Visit Questionnaire, question 05.04 is not configured correctly.  For all other questions, it's just a radial button and/or freetext.  However, this question does not have a freetext option and additionally says ""subjects"" by the response (and the question is not about subjects).  Then if you click on the + to add, it asks about subjects (again, not about subjects).  I can only get through this by leaving the pop up blank and accepting it as is.  Once you do, 4 additional questions pop up that must be answered.  It doesn't make sense for this particular question to be formatted differently than the other questions and I'm not sure why it asks about subjects.  I cannot get the Primary Key info to work, but the last attached screenshot is from the actual trial/site/visit that found the issue.",Topic,High,8,Closed,MX#1016498,Closed,
+190,191,Update of the LCT dropdown list following the official re-naming of the CPS LCTs effective from 1-Dec-2018,Add/Modify CPS LCT names available in the dropdown list for this field.,Topic,High,7,,MX#1016571,,
+191,192,under Trial / Details / Trial Progress - how often should we as superusers recommend that the SMa update this field?  Monthly / Quarterly... ?,Business process question,Topic,Low,,,,,
+192,193,Secondary ID in CTMS,"for CTMS there was a lot of discussion around the 'Secondary ID' and the 'Acronym'.  I know we decided on recommending to just 'n/a' the acronym, but what about the secondary ID?  I remember someone mentioning using the Medrio ID but not sure if we came to a final conclusion (?)  Thoughts?  ",Topic,Low,,,,,BPT
+197,198,Requests from CPS Supply Management ,"specifications to be written, but where?",Topic,Medium,,,,,
+199,200,Alternate day/time slot for BPT,"May would like to join BPT meeting, but Tuesday timeslot does not work for us. Is there a possibility to reschedule this meeting to another time slot (Friday 8 AM or Monday)?",Topic,Medium,,,,,
+200,201,"Milestone definitions are incorrect in CTMS for ""completed"" and ""closed""","The definitions in CTMS of the status Completed and Closed need to be updated according to the training material. Need further definition to ""primary completion date"" as well.
+
+Also there are more definitions available in the config specs that could assist the users. Proposal to update the definitions accordingly. Does it really need Config Admin to do or can a Business Admin perform the task?",Topic,Medium,,,,,
+201,202,Search field bug?,"When looking at source, it doesn't show RDO unless you type it?",Topic,Low,,,,,
+203,204,Opening an IT USS ticket,"Sam can open a ticket of the types ""issue"" or ""request for support"". I can only open a ticket of the type ""issue"". Why is that the case, is this dependent on the user?",Topic,Low,,,,,
+204,205,"Which entry triggers ""Samples Collected"" to become available?","User question, samples collected greyed out.
+Question of Poorna Ramamurthy. ",Topic,Low,,,MX#1015752,,
+205,206,Are the following SR Reports still needed? Study Registry Public Clinical Trial Registry - not used since May 2018 Study Registry Public Clinical Trial Results Database - not used since Oct 2017 Study Registry Study Summary - last used in Nov 2018,"Amy: Crystal does not support SSO to HANA and there is no way to pass the username of the BO users executing the report, making it impossible to evaluate user specific permissions in HANA for Crystal reports.  Given that this does not meet the Roche security requirements, we'd like to decommission these reports if possible.",Topic,Medium,,,,,
+206,207,Unnecessary tickbox in visit dialogue,Testing revealed: The reviewbox for the approver is never enabled. Confirm with BSI and consider removing the tickbox as it is leading to questions from the users.,Bug,Medium,,238605,,IM15468073,
+207,208,C3 data in CTMS,Sam and Akash rec'd an email from Michael G requesting to identify C3 data in CTMS,Topic,Medium,,,,,
+209,210,Adoption Metrics,Update needed for Dec SteerCo on 13DEC,Topic,High,,,,,
+213,214,"placeholders and trial ID named in eTMF named after Secondary ID, not Trial Name and RD #",Example: RD003541,Topic,High,,,,,
+214,215,Proposed changes to the Confirmation and Follow-Up Letters,,Story,High,8,,MX#1016498,,
+215,216,"
+CTMS Configuration_Manufacture/Material #",A configuration error was detected by a Logistics manager,Bug,High,,239086,,,
+217,218,[Admin Workshop] Determine review cycle for questionnaire/templates in CTMS to plan for follow-up work that is necessary after a change. This is applicable to milestones and activities as well,"Specific to BA: internally to be discussed.
+Harmonized CPS / RMS template: change may be triggered by any level. BPT should agree to implementation.
+Part of the Configuration SOP, IT OSP will reference.",Topic,Low,,,,,
+218,219,[Admin Workshop] Create flow-chart/decision tree for permission trouble shooting by B-Admins,Create a knowledge base out of the guidance from BSI and store it on the gDrive support page which Michael will create,Topic,Low,,,,,
+219,220,Error N20,"Error N20: After logging in on VALIDATION and clicking on either of the blue alerts (configured by me and Sam) on my home screen, the following error message appears (see screenshot).
+This occurred when testing the configuration changes of package LC 3.2 on VAL. I would like to be sure, that this error is not related to any configuration changes and that we are not introducing this error into PRODUCTION when we implement the configuration changes of this package.",Bug,High,,238949,,INC0081949,
+220,221,Unclear origin of data (3),"Trial > Site > Interim Monitoring Visit > Subjects
+Click on ""Review Subjects"" > Shows a strange list of subject numbers starting with ""GEN100...""",Bug,Medium,,238942,,INC0081023,
+221,222,Dashboard alert email,Alerts and Notifications on the dashboard are in a different order than in the dashboard alert email. Can this be changed?,Bug,Medium,,239085,,,
+223,224,Service Now,"What is happening with tickets in status ""On Hold""?",Topic,Medium,,,,,
+224,225,Admin training,"Trainign requirement for admins is currently Group 1, but should be Group 2",Topic,Low,,,,,
+225,226,CTMS Follow Up Letter Issues,"BSI #237663 - One of the users copy-and-pasted text in the Follow Up Letter Template and was trying to make edits. But it would not let her use the mouse to click on text so she asked for my help. We could not select a chunk of text to delete or click to add another bit of text in the middle. It would only let you start at the beginning of the text then use the arrow keys to go one by one to make edits one character at a time. This was not practical given that her letter was really long. I'm not sure if the issue is due to copy/paste, the long length, and/or a technical problem. She ended up just deleting the entire text and attached a separate form, so giving you the study/site won't really help.",Topic,Medium,,237663,,IM15607836 (INC0109346),
+226,227,Visit Reports finalised directly as V2 in first review cycle,,Topic,Medium,,,,,
+227,228,Site organization cannot be added as site (VAL),,Topic,Medium,,,,,
+229,230,Potential misconfiguration or bug regarding SQV Report Visit Participants,Related to CPS Issue,Bug,High,8,,MX#1016712,INC0093038,
+231,232,"Official testing of all templates, excluding those added after go-live and MVR","Formal testing on every template was not done prior to go-live. Since go-live, we have added or updated existing/new templates which are tested and documented. Should we perform one final test on all other document templates to ensure accuracy? ",Topic,High,,,,,
+232,233,Revoking rights of users who have not completed impacted SOP review after go-live,"It was agreed in the Support Workshop that we would revoke users CTMS access if they were still pending completion of impacted SOPs in CHRIS. Do we still want to implement this and if so, what is the plan?",Topic,High,,,,,
+234,235,File names uploaded to eTMF from CTMS,From SU John Burden: Files generated in CTMS and transfered to eTMF binders should have CIM RD number as a prefix.,Story,High,15,"#241851
+#240692",MX#1018226,,
+235,236,Subjects/Samples_request for more assistance with this,Is it possible to set up an hour with BSI and super users to cover this topic? We are struggling a bit and could benefit from a discussion rather than email.,Topic,Low,,,,,
+237,238,Communication on download of CTMS offline module,Content: How to download and workarounds for the problems in Mannheim,Topic,Medium,,,,INC0161645,
+238,239,Communication on availability of email notifications from CTMS,Content: How to activate the email notifications,Topic,High,,,,,
+239,240,Power Point Error when creating report for large number of trials,,Bug,Medium,,240212,,INC0171431,
+240,241,Problem with editing of monitoring visit questionnaire,,Topic,High,9,,MX#1016688,,
+241,242,Request to make the ClinOps Report for LCC available to all CPS users (Configuration task for Medinix),,Story,High,10,,MX#1016712,,
+242,243,"Re-linkage of Trials to EP is possible. Is this also possible for other levels (Sites to Trials, Visits to Sites)?",,Topic,Medium,,240754,,,
+244,245,UAM CTMS interface mappings,,Story,Medium,,240426,,,
+245,246,Compliance concerns re: template versioning in CTMS,"See spreadsheet:
+",Topic,Medium,,,,,
+246,247,Contractor adresses in follow-up letters is not showing (after change from free text field to organization drop-down field).,,Story,High,8,,MX#1016771,REQ0067739 (SCTASK0100349),
+249,250,Audit Trail Problem 1,Wrong reason for change and eSignature on person-role,Bug,High,,240248,,INC0173547,
+250,251,Audit Trail Problem 2,Wrong audit trail for first modification of migrated trial,Bug,High,,241603,,INC0246946,
+252,253,COV questionnaire question 04.11,This question should be RMS specific. Therefore the CPS reference trial should be updated to remove this question from the COV questionnaire.,Story,High,8,,MX#1016498,,
+253,254,Copy from existing trial,"CTMS will be patched modifying the Trial Configuration options for Monitoring Visit Questionnaire by removing the ability to check ""Copy from Master Template"" and default to ""Copy from Existing Trial"". In order to allow users to copy from existing and pre-defined trials, the reference trials need to be configured.",Story,Medium,1,234244,1015191,CHG0072730,
+254,255,AIS/IIS Coordinator: Read and Update permission for Persons,"In CTMS AIS/IIS Coordinator permissions, add ""Read"" and ""Update"" permission for ""Persons"".",Story,Medium,2,,1015275,IM1540717,
+255,256,Update request for inventory item type upload format,What is the impact to add an additional column to distinguish cooling requirements? Currently everything is automatically ambient.,Topic,Medium,,,,REQ0128134,
+256,257,Do users have to be assigned to an organization in order to see the inventory?,Occurred in TST that GengQin couldn't see items under Mannheim location without being assigned to the organization. Is this normal? I don't think so...,Topic,High,,242147,,,
+257,258,Withdrawal of a trial,"Site status? If a trial is withdrawn, no action to change the status of the sites.",Topic,Low,,,,,BPT
+258,259,Inventory question,Cannot find/add items to order/shipment,Topic,High,,,,,
+259,260,Confirmation Letter Document Template - date format incorrect,"In the visit dialogue for this visit example, the tickbox for ""track hours"" is not ticked. Nevertheless, in the confirmation letter ""12:00 AM"" seems to be pulled into the field for ""Planned contact date(s)"". Not sure if this is a technical issue to be fixed by BSI or a configuration issue to be fixed by Medinix, but time should not be pulled into the document if tickbox ""track hours"" is not ticked. Please also check if this applies to other letter templates.",Story,Medium,8,,MX#1016498,INC0249459,
+265,266,Order of actions when creating new trial and setting flag Activate for eTMF,"We have noticed that users first acttivates trial for eTMF and after that update the SecondaryID. 
+Also we have noticed that users hae entered D or D00 for SecondaryId and then activates the trial fro eTMF.
+Afterwards if the secondaryId will be updated in CTMS it will not be updated in eTMF. ",Topic,Medium,,,,,
+266,267,CPS Investigational Product Accountability Docuemnt - drop down not working,"Details provided via email with Medinix, ticket submitted by Austin Felix",Bug,Medium,10,,MX#1016838,INC0268246,
+267,268,"Make Departments within a BA (e.g. CPS ClinSci and CPS R&D, RMS R&D) visible and usable for reporting","CPS ClinSci and CPS R&D are increasingly using CTMS (2 new Super Users for ClinSci have just been trained). Now there is a need to distinguish between ClinSci, R&D and ClinOps Studies for Reporting purposes. Similar Situation within RMS. The existing criteria (Trial owner, Sponsor, BA, Study Type, Trial Responsible) do not fullfill this need appropriately. We need a new drop-down field ""Responsible Department"" to show up next to Trial owner (if Trial owner is a BA). Agreement from Daniel Rehn. ",Story,High,,,,REQ0128135,
+268,269,Update to system risk assessment in progress,"What do we rate the impact to business if the system is out of service for an extended period of time? How do we get the most current document templates for the end users in the meantime? How do we arrange for shipments, etc?",Topic,Medium,,,,,
+269,270,CTMS Trial ID Numbering,"A study manager has made me aware that the Study RD numbers in CTMS may not have been assigned sequentially (please see a screenshot below).
+Can you please look into this? e.g. what happend with the trials with IDs between RD005024 and RD005041?",Topic,Medium,,243159,,REQ0126497,
+270,271,Immediate email alert to end users for monitoring visit,"1) User is receiving email 4 times
+2) User does not want to receive the alert until their specific action is required
+3) Email is going to proxies as well",Bug,High,,,,REQ0128136 ,
+271,272,"Implement new questionnaire ""Routine Site Qualification Visit""",Already implemented in test. Use that questionnaire in specification.,Story,High,9,,MX#1016688,,
+272,273,"Implement new Report ""RMS Site Quaification Waiver""","Implement this report, site dependant. Already implemented in test. Use that report in specification",Story,High,9,,MX#1016688,,
+273,274,"Implement new report ""RMS Site Qualification Visit Report"" listing data of ""Routine Site Qualification Visit""",Implement this report. Already implemented in test. Use that report in specification,Story,High,9,,MX#1016688,,
+274,275,"Update existing report ""RMS Site Qualification Report Template #v1"": rename to ""RMS Full Lab Evalutation Site Qualification Visit Report""",Update as described,Story,High,9,,MX#1016688,,
+275,276,WinCAEv-CTMS interface,Is there a way to pull a report that shows which trials have WinCAEv trial configured for tracking via interface? Are there conversations about this changing in the future?,Topic,Medium,,244458,,SCTASK0179566,
+276,277,CTMS PRD interface error for eTMF due to use of old document template,Site Qualification Visit Report (PK 1009478740),Bug,Medium,10,,MX#1017182,INC0390665,
+278,279,CPS R2 workshop,"Proposal to review all entries that are ""removed or not for this release"" because it is already available and make these ""Tips of the Week""",Topic,Low,,,,,
+281,282,Granting Matrix to be reviewed for deletion capability,,Topic,Medium,,,,,
+283,284,Configuration of tool tips to replace WalkMe SmartTips,"Implement smart tips for the tasks performed during central monitoring. CRAs have different understandings and it would be really helpful to have a description offered under each task. This will also help to be consistent. Attached is a file that was provided by the Remote SDV-eTMF Project Team in April 2018 (slightly modified).
+
+Also tracked on CTMS R2 List. Configuration for this task can be started, release to production depends on new release (1.2 or 2).",Story,High,10,,,,Operations
+285,286,Alert with TAT for follow-up letters and reports,Previous agreement was not aligned due to misunderstandings between calendar days and business days. Currently the Reports/Letter alerts are not planned according to the way RMS SOPs are written. This needs to be discussed again to determine where the change should be.,Topic,Medium,,,,,BPT
+287,288,Bi-annual review of CTMS users by team leads,To capture cases where people have changed departments WITHIN Roche and need their access rights updated,Topic,Low,,,,,
+288,289,Process of adding another CTMS BPM,"Since GengQin is Configuration and I am Business, it was requested by Hermann to have Tamara as an additional BPM for CTMS. How do we handle this?",Topic,Low,,,,,
+289,290,Deletion of contact details when updating main employer (even though dialogue is not saved).,,Bug,Low,,#245565,,INC0473689,
+291,292,TAT for Reports and follow up letters,Current configuration doesn't match the SOP: The First Report Draft Due is 15 calendar days. Approval should be 20 calendar days. The follow up letter is configured at 15 calendar days (which is too long). ,Topic,Medium,,,,,
+293,294,Problem with advanced search on milestones,,Bug,Medium,,#246291,,INC0452855,
+294,295,Second import of subject data overwriting the existing data produces strange numbers.,Initial import of subject data from Excel to CTMS works. Second import overwriting the existing data shows correct values,Bug,Medium,,#244774,,INC0437517,
+296,297,Users are able to upload inventory item types outside of Admin Module,Reported by Austin,Bug,High,,#245804 ,,,
+297,298,Inventory item type limit?,Is there a limit to the # of item types that can be uploaded at one time? Will the system delay if we have more than a certain # of item types?,Topic,Medium,,,,REQ0174593 ,
+298,299,EDC interface,"Do subject actuals get pulled from site level to trial level?
+The User will select on Trial and Site Level ""Source Actuals: EDC"". Does that mean the #s will populate first within the sites and then add together at trial level?",Topic,Medium,,,,,
+299,300,Persons' phone and mail,"Person's phone and mail seem to be person-employer specific. The system behaves in a way that, if the employer is changed, the email and phone data is deleted.",Bug,Low,,#245565,,INC0473689,
+300,301,RMS Site Qualification Visit Report Template appears in all monitoring visits,"With LC 9.1 there were RMS specific templates and SQV visit type added to CTMS. A CPS user brought to my attention today   that when he created a General Visit Monitor Visit for his site (KRSGM001) under trial RD003466, the RMS Site Qualification Visit Report shows up under Documents for that visit. The RMS Site Qualification Visit Report template should only show up when Site Qualification Visit or RMS Routine Qualification Visit Monitor Visit Types are selected.",Bug,Medium,14,#246876,MX#1017633,REQ0183351,
+302,303,Tickbox and Audit Trail issue for visit report,"Documents overview under the visit and the pdf document show that the report has been signed off by author, reviewer and approver. Tickboxes and audit trail in the visit dialogue do NOT show that the report has been signed off by anyone.
+
+Possibly related to bugs introduced with RMS Site Qual Report, but cannot be fixed by configuration team.",Bug,High,,#247116,,INC0586581,
+303,304,Routing of DIA CTMS ISSUE tickets suddenly goes to IT Service desk,,Topic,High,,,,,
+304,305,Email alerts to have the same triggers as the dashboard alerts with regards to the review and approval process in CTMS,,Story,Medium,,#246602,,SCTASK0242059,
+305,306,RMS Routine SQV Letters,Confirmation letters do not appear under the RMS Rontine SQV. Medinix will implement a fix for Lifecycle 10.1,Story,High,10,,,,
+306,307,Defining a proces to Enable API for new dynamic field,"we need to define a process so that whenever a new CTMS dynamic field is being replicated to the CIW (which will be automatic if the API-enabled flag has been set), we know about it and have a classification for it (metadata, details data). ",Topic,Medium,,,,,Operations
+307,308,CRA rights with regards to trial budget,Is it correct that CRAs can create but not update the trial budget?,Topic,Medium,,247168,,INC0587031,
+309,310,User was able to review and comment on monitoring report details for a firewall study without being assigned to the study. This should not be possible,"CTMS user had the following roles in CTMS: CRA Line Manager (CRA-LM) and Management Lead. According to the granting matrix ""Management Lead"" role can see pre-defined firewall study information when they run the ""Trial overview (incl. Firewall)"" report in the reports tab. But they should not be able to see any further details on firewall studies or be able to see and find firewall studies in the system unless they are directly assigned to the study. CTMS user has been assigned as the approver for a monitoring visit report for a firewall study and was able to read, review and comment on the report details without being assigned to the study. This should not be possible.",Bug,Medium,,#247558,,INC0623252,
+310,311," In the monitoring overview report, column for ""Responsible Author"" the data is actually showing the study manager/reviewer instead of the CRA/author. ",,Bug,Low,10,,MX#1017861,INC0591238,
+311,312,Closure Letter not set-up for eTMF,"After reviewing the eTMF filing locations for the letters generated in CTMS (PROD), it was found that the Closure Letter is not setup for auto-file in CTMS like the other letters. According to my notes from October 2017, including the Closure Letter in the auto-file group was communicated. Could you please confirm if this is an error in configuration or a miss in documentation? Thanks in advance for your help!",Bug,Medium,11,,MX#1017560,INC0307099,Operations
+312,313,Review of external roles in CTMS,Review if all of the external roles in CTMS are used and needed,Topic,Medium,,,,,BPT
+314,315,CTM UAT LC 8.1 ,Findings/Observations review and alignment on next steps moving forward,Topic,Medium,,,,,
+315,316,CTMS problem RD005198,"After creting a new study, the system automatically assigns three roles (Study Manager, Co Study Manager and Clinical Trial Support) to the study manager.
+According to the study manager, Ktja, only the fist role is required. Any concern to remove the automatic assinment of the other two roles?",Topic,Low,,,,,
+316,317,"Study Manager Line Manager role can only be assigned to a trial by the Management Lead role. Check if it is possible (also considering role level restrictions) to grant this right to study managers. Task for Medinix, then decision to be taken in BPT.",,Story,Low,,,,,BPT
+317,318,Granting/Assignment/Substitution Matrix Knowledge Document,"Granting, Assignment and Substitution Matrix are critical for ensuring that the users can complete there tasks in CTMS adequately. They are also very complex and interact with other rules in the system. We have made several adjustments since go-live where necessary. In order to ensure that these changes are not reversed by accident in the future we should create a CTMS Matrix Knowledge Document!",Topic,Medium,,,,,BPT
+318,319,Planning Manager Role (READ ALL and READ ONLY) necessary for reporting purposes. Workaround via B-Adm is available.,Define conditions and training requirements under which this role can be granted.,Story,Medium,,,,,BPT
+320,321,Creating new site without PI information,"Some times study teams need to add new sites without PI information e.g. R&D studies.
+Currently the system enforces PI assignement for new site creation. Should we create a generic PI place-holder?",Topic,Medium,,,,,
