@@ -1,7 +1,7 @@
 from rest_framework import routers
 
 from django.urls import path
-from api.views import DataFileView
+from api.views import DataFileView, DataFileDetails
 
 # router = routers.DefaultRouter()
 # router.register('api/data', DataFileViewset, 'data')
@@ -10,5 +10,6 @@ from api.views import DataFileView
 # urlpatterns = router.urls
 
 urlpatterns = [
-    path('', DataFileView.as_view())
+    path('', DataFileView.as_view()),
+    path('/<int:pk>', DataFileDetails.as_view())
 ]
